@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "astro-icon": "^1.1.5",
+    "lucide-astro": "^0.556.0"
+  }
+}

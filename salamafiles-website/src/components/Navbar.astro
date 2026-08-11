@@ -1,0 +1,163 @@
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="brand">
+
+      <img src="/logo.png" alt="SalamaFiles Logo" class="logo" />
+
+      
+
+    </a>
+
+    <nav>
+
+      <a href="#features">Features</a>
+
+      <a href="#how-it-works">How it Works</a>
+
+      <a href="#pricing">Pricing</a>
+
+      <a href="#contact">Contact</a>
+
+      <a
+        href="https://app.salamafiles.com"
+        class="login">
+
+        Login →
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<style>
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #edf2f7;
+}
+
+.nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.brand{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+
+}
+
+.logo{
+
+    height:110px;
+    width:auto;
+
+}
+
+.brand span{
+
+    font-size:1.7rem;
+    font-weight:800;
+    color:#0B7A75;
+    letter-spacing:-0.5px;
+
+}
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:32px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#334155;
+
+    font-weight:600;
+
+    transition:.25s ease;
+
+}
+
+nav a:hover{
+
+    color:#0B7A75;
+
+}
+
+.login{
+
+    background:#0B7A75;
+    color:white !important;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    transition:.25s ease;
+
+    box-shadow:
+    0 10px 25px rgba(11,122,117,.18);
+
+}
+
+.login:hover{
+
+    background:#0A6764;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 16px 32px rgba(11,122,117,.28);
+
+}
+
+@media(max-width:900px){
+
+    .nav{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    nav{
+
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    .brand span{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+</style>

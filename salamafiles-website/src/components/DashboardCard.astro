@@ -1,0 +1,404 @@
+<div class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h4>Safeguarding Dashboard</h4>
+
+            <span>Live Case Overview</span>
+
+        </div>
+
+        <div class="status">
+            ● Secure
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <span>Open Cases</span>
+
+            <strong>42</strong>
+
+        </div>
+
+        <div class="stat">
+
+            <span>High Priority</span>
+
+            <strong class="danger">8</strong>
+
+        </div>
+
+        <div class="stat">
+
+            <span>Resolved</span>
+
+            <strong class="success">126</strong>
+
+        </div>
+
+    </div>
+
+    <div class="case-list">
+
+        <div class="case">
+
+            <div class="case-icon high"></div>
+
+            <div class="case-info">
+
+                <strong>Child Protection</strong>
+
+                <span>Nairobi • Assigned to Sarah</span>
+
+            </div>
+
+            <span class="badge high">High</span>
+
+        </div>
+
+        <div class="case">
+
+            <div class="case-icon medium"></div>
+
+            <div class="case-info">
+
+                <strong>GBV Report</strong>
+
+                <span>Kakuma • Under Investigation</span>
+
+            </div>
+
+            <span class="badge medium">Medium</span>
+
+        </div>
+
+        <div class="case">
+
+            <div class="case-icon low"></div>
+
+            <div class="case-info">
+
+                <strong>Workplace Misconduct</strong>
+
+                <span>Nairobi HQ • Resolved</span>
+
+            </div>
+
+            <span class="badge success">Closed</span>
+
+        </div>
+
+    </div>
+
+    <div class="activity">
+
+        <div class="activity-title">
+            Recent Activity
+        </div>
+
+        <div class="timeline">
+
+            <div class="event">
+                <span class="dot"></span>
+                Case SF-1042 assigned
+            </div>
+
+            <div class="event">
+                <span class="dot"></span>
+                Emergency escalation triggered
+            </div>
+
+            <div class="event">
+                <span class="dot"></span>
+                Investigation completed
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+
+.dashboard{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:
+        0 30px 60px rgba(15,23,42,.12),
+        0 8px 20px rgba(15,23,42,.05);
+
+    width:100%;
+
+    max-width:520px;
+
+    border:1px solid #EDF2F7;
+
+}
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+}
+
+.dashboard-header h4{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+}
+
+.dashboard-header span{
+
+    color:#64748B;
+
+    font-size:.9rem;
+
+}
+
+.status{
+
+    background:#ECFDF5;
+
+    color:#059669;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.stat{
+
+    background:#F8FAFC;
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+.stat span{
+
+    display:block;
+
+    color:#64748B;
+
+    font-size:.82rem;
+
+    margin-bottom:8px;
+
+}
+
+.stat strong{
+
+    font-size:1.6rem;
+
+}
+
+.success{
+
+    color:#16A34A;
+
+}
+
+.danger{
+
+    color:#DC2626;
+
+}
+
+.case-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.case{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.case-icon{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.case-icon.high{
+
+    background:#DC2626;
+
+}
+
+.case-icon.medium{
+
+    background:#F59E0B;
+
+}
+
+.case-icon.low{
+
+    background:#16A34A;
+
+}
+
+.case-info{
+
+    flex:1;
+
+}
+
+.case-info strong{
+
+    display:block;
+
+    font-size:.95rem;
+
+}
+
+.case-info span{
+
+    color:#64748B;
+
+    font-size:.82rem;
+
+}
+
+.badge{
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+.badge.high{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+.badge.medium{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+.badge.success{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.activity-title{
+
+    font-weight:700;
+
+    margin-bottom:14px;
+
+}
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.event{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#475569;
+
+    font-size:.9rem;
+
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#0F766E;
+
+}
+
+</style>
