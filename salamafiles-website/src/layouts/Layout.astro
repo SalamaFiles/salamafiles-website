@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const { title = "SalamaFiles" } = Astro.props;
 ---
 
@@ -6,7 +8,11 @@ const { title = "SalamaFiles" } = Astro.props;
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
 
     <title>{title}</title>
 
@@ -16,11 +22,11 @@ const { title = "SalamaFiles" } = Astro.props;
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="/src/styles/global.css">
+        rel="stylesheet"
+    />
 </head>
 
 <body>
