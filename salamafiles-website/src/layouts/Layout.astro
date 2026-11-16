@@ -1,4 +1,4 @@
----
+
 import "../styles/global.css";
 
 const { title = "SalamaFiles" } = Astro.props;
@@ -21,6 +21,12 @@ const { title = "SalamaFiles" } = Astro.props;
         content="Secure safeguarding and case management platform for NGOs and humanitarian organizations."
     />
 
+    <!-- Facebook Domain Verification -->
+    <meta
+        name="facebook-domain-verification"
+        content="epqo5etcmo0ciovol1x6y3qi17p2a0"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
@@ -30,8 +36,6 @@ const { title = "SalamaFiles" } = Astro.props;
 </head>
 
 <body>
-
-<slot />
-
+    <slot />
 </body>
 </html>
